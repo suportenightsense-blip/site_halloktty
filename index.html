@@ -6,15 +6,7 @@
   <title>Halloktty — Links</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-  /* Sticker styles injected inline for compatibilidade local */
-  .stickers{position:absolute;inset:0;pointer-events:none}
-  .sticker{position:absolute;width:160px;max-width:22vw;opacity:0.95;filter:drop-shadow(0 10px 30px rgba(255,77,137,0.12)) saturate(110%);transform-origin:center center;transition:transform .35s ease, opacity .35s ease}
-  .sticker.s1{bottom:30%;left:6%;width:160px;transform:rotate(-12deg)}
-  .sticker.s2{bottom:30%;right:6%;width:140px;transform:rotate(8deg)}
-  .sticker:hover{transform:translateY(-8px) scale(1.03)}
-  @keyframes floaty {0%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-6px) rotate(var(--r,0deg))}100%{transform:translateY(0) rotate(var(--r,0deg))}}
-  .sticker{animation: floaty 6s ease-in-out infinite}
-  @media(max-width:700px){.sticker{max-width:34vw}.sticker.s3{display:none}}
+  /* Sem stickers - layout limpo */
   </style>
 </head>
 <body>
@@ -29,13 +21,6 @@
       <div class="cta-row">
         <button class="cta primary" onclick="window.open('https://t.me/GoticaFranjudinha_bot', '_blank')">Entrar no Chat 🔥</button>
         <button class="cta" onclick="window.open('https://www.instagram.com/goticasubmissa666/', '_blank')">Instagram 💗</button>
-      </div>
-      
-      <!-- Stickers decorativos (são posicionados via CSS).
-           Substitua as imagens em /images/ com PNGs transparentes para melhor resultado. -->
-      <div class="stickers" id="stickers">
-        <img id="sticker-1" src="images/sticker1.png" alt="sticker1" class="sticker s1" loading="lazy" onerror="this.style.display='none'" />
-        <img id="sticker-2" src="images/sticker2.png" alt="sticker2" class="sticker s2" loading="lazy" onerror="this.style.display='none'" />
       </div>
     </div>
   </header>
@@ -54,58 +39,11 @@
 
   <footer class="footer">
     <div class="container">
-      <small>© Halloktty — Links rápidos</small>
+      <small> Halloktty — Links rápidos</small>
     </div>
   </footer>
   <script>
-    (function(){
-      const input = document.getElementById('sticker-input');
-      const stickers = Array.from(document.querySelectorAll('.sticker'));
-
-      function assignFiles(files){
-        // assign files sequentially to sticker slots
-        for(let i=0;i<stickers.length && i<files.length;i++){
-          const f = files[i];
-          const url = URL.createObjectURL(f);
-          const img = stickers[i];
-          img.src = url;
-          img.style.display = '';
-          img.onload = ()=> URL.revokeObjectURL(url);
-        }
-      }
-
-      input.addEventListener('change', (e)=>{
-        if(e.target.files.length) assignFiles(e.target.files);
-      });
-
-      // support drag & drop onto the stickers container
-      const container = document.getElementById('stickers');
-      ['dragenter','dragover'].forEach(ev=>container.addEventListener(ev, (e)=>{ e.preventDefault(); container.style.opacity=0.9 }));
-      ['dragleave','drop'].forEach(ev=>container.addEventListener(ev, (e)=>{ e.preventDefault(); container.style.opacity=1 }));
-      container.addEventListener('drop', (e)=>{
-        const dt = e.dataTransfer;
-        if(!dt) return;
-        const files = Array.from(dt.files).filter(f=>f.type.startsWith('image/'));
-        if(files.length) assignFiles(files);
-      });
-
-      // if user opens directly (file://) some browsers block fetch; using input avoids that.
-    })();
-
-    // Adicionando movimento aleatório aos stickers
-    document.addEventListener('DOMContentLoaded', () => {
-      const stickers = document.querySelectorAll('.sticker');
-
-      stickers.forEach((sticker) => {
-        const randomizePosition = () => {
-          const x = Math.random() * 10 - 5; // Movimento horizontal aleatório
-          const y = Math.random() * 10 - 5; // Movimento vertical aleatório
-          sticker.style.transform = `translate(${x}px, ${y}px)`;
-        };
-
-        setInterval(randomizePosition, 2000); // Atualiza a posição a cada 2 segundos
-      });
-    });
+    // Código limpo - sem stickers
   </script>
 </body>
 </html>
