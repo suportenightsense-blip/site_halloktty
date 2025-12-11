@@ -9,10 +9,8 @@
   /* Sticker styles injected inline for compatibilidade local */
   .stickers{position:absolute;inset:0;pointer-events:none}
   .sticker{position:absolute;width:160px;max-width:22vw;opacity:0.95;filter:drop-shadow(0 10px 30px rgba(255,77,137,0.12)) saturate(110%);transform-origin:center center;transition:transform .35s ease, opacity .35s ease}
-  .sticker.s1{top:15%;left:6%;width:160px;transform:rotate(-12deg)}
-  .sticker.s2{top:15%;right:6%;width:140px;transform:rotate(8deg)}
-  .sticker.s3{bottom:35%;left:10%;width:180px;transform:rotate(6deg)}
-  .sticker.s4{bottom:35%;right:14%;width:150px;transform:rotate(-8deg)}
+  .sticker.s1{bottom:30%;left:6%;width:160px;transform:rotate(-12deg)}
+  .sticker.s2{bottom:30%;right:6%;width:140px;transform:rotate(8deg)}
   .sticker:hover{transform:translateY(-8px) scale(1.03)}
   @keyframes floaty {0%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-6px) rotate(var(--r,0deg))}100%{transform:translateY(0) rotate(var(--r,0deg))}}
   .sticker{animation: floaty 6s ease-in-out infinite}
@@ -38,8 +36,6 @@
       <div class="stickers" id="stickers">
         <img id="sticker-1" src="images/sticker1.png" alt="sticker1" class="sticker s1" loading="lazy" onerror="this.style.display='none'" />
         <img id="sticker-2" src="images/sticker2.png" alt="sticker2" class="sticker s2" loading="lazy" onerror="this.style.display='none'" />
-        <img id="sticker-3" src="images/sticker3.png" alt="sticker3" class="sticker s3" loading="lazy" onerror="this.style.display='none'" />
-        <img id="sticker-4" src="images/sticker4.png" alt="sticker4" class="sticker s4" loading="lazy" onerror="this.style.display='none'" />
       </div>
     </div>
   </header>
