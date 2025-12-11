@@ -72,6 +72,7 @@ body{background:linear-gradient(180deg,#05050a 0%, #0b0b10 40%, #050407 100%);co
   background: linear-gradient(45deg, #ff66a3, #ff4d89, #ff66a3, #b84ddd);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   z-index: -1;
   animation: borderRotate 4s linear infinite;
