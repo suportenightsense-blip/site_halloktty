@@ -9,10 +9,10 @@
   /* Sticker styles injected inline for compatibilidade local */
   .stickers{position:absolute;inset:0;pointer-events:none}
   .sticker{position:absolute;width:160px;max-width:22vw;opacity:0.95;filter:drop-shadow(0 10px 30px rgba(255,77,137,0.12)) saturate(110%);transform-origin:center center;transition:transform .35s ease, opacity .35s ease}
-  .sticker.s1{top:20%;left:6%;width:160px;transform:rotate(-12deg)}
-  .sticker.s2{top:28%;right:6%;width:140px;transform:rotate(8deg)}
-  .sticker.s3{bottom:28%;left:10%;width:180px;transform:rotate(6deg)}
-  .sticker.s4{bottom:18%;right:14%;width:150px;transform:rotate(-8deg)}
+  .sticker.s1{top:15%;left:6%;width:160px;transform:rotate(-12deg)}
+  .sticker.s2{top:15%;right:6%;width:140px;transform:rotate(8deg)}
+  .sticker.s3{bottom:35%;left:10%;width:180px;transform:rotate(6deg)}
+  .sticker.s4{bottom:35%;right:14%;width:150px;transform:rotate(-8deg)}
   .sticker:hover{transform:translateY(-8px) scale(1.03)}
   @keyframes floaty {0%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-6px) rotate(var(--r,0deg))}100%{transform:translateY(0) rotate(var(--r,0deg))}}
   .sticker{animation: floaty 6s ease-in-out infinite}
@@ -39,13 +39,7 @@
         <img id="sticker-1" src="images/sticker1.png" alt="sticker1" class="sticker s1" loading="lazy" onerror="this.style.display='none'" />
         <img id="sticker-2" src="images/sticker2.png" alt="sticker2" class="sticker s2" loading="lazy" onerror="this.style.display='none'" />
         <img id="sticker-3" src="images/sticker3.png" alt="sticker3" class="sticker s3" loading="lazy" onerror="this.style.display='none'" />
-        <img id="sticker-4" src="images/hellokitty_heart.png" alt="Hello Kitty Heart" class="sticker s4" loading="lazy" onerror="this.style.display='none'" />
-      
-        <!-- Controls to load local images into the sticker slots -->
-        <!-- Código removido: <div style="position:absolute;left:50%;top:6%;transform:translateX(-50%);pointer-events:auto;z-index:20">
-          <label for="sticker-input" style="background:linear-gradient(90deg,#ff6ea1,#b84ddd);color:#fff;padding:6px 10px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13px">Carregar figurinhas</label>
-          <input id="sticker-input" type="file" accept="image/*" multiple style="display:none" />
-        </div> -->
+        <img id="sticker-4" src="images/sticker4.png" alt="sticker4" class="sticker s4" loading="lazy" onerror="this.style.display='none'" />
       </div>
     </div>
   </header>
