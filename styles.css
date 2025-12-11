@@ -41,6 +41,21 @@ body{background:linear-gradient(180deg,#05050a 0%, #0b0b10 40%, #050407 100%);co
 .sticker {
   animation: floaty 6s ease-in-out infinite;
 }
+.preview-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.preview-container {
+  margin-top: 20px;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255,77,137,0.2);
+}
 
 @keyframes floaty {
   0% {
