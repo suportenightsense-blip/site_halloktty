@@ -15,7 +15,7 @@
 :root{--bg:#050507;--panel:#0b0b0f;--accent:#ff66a3;--accent-2:#ff4d89;--muted:#b8a3ad}
 html,body{height:100%}
 body{background:linear-gradient(180deg,#05050a 0%, #0b0b10 40%, #050407 100%);color:#fff;min-height:100vh}
-.hero{padding:60px 0 40px;text-align:center;position:relative;overflow:hidden}
+.hero{padding:100px 0 60px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 10%, rgba(255,77,137,0.04), transparent 20%), radial-gradient(circle at 80% 80%, rgba(255,77,200,0.02), transparent 20%);pointer-events:none}
 .link-card{display:inline-block;padding:12px 18px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));color:var(--muted);text-decoration:none}
 .preview{margin-top:18px}
