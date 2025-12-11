@@ -1,6 +1,6 @@
 .container{max-width:900px;margin:0 auto;padding:24px}
 .hero{padding:48px 0;text-align:center}
-.hero h1{font-size:44px;letter-spacing:1px;margin-bottom:8px;color:var(--accent)}
+.hero h1{font-size:44px;letter-spacing:1px;margin-bottom:8px;color:var(--accent);background:linear-gradient(45deg, #ff66a3, #ff4d89, #ff1493, #e91e63);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative;display:inline-block;animation: titleGlow 3s ease-in-out infinite;text-shadow:0 0 30px rgba(255,102,163,0.5)}
 .subtitle{color:var(--muted);margin-bottom:18px}
 .square-buttons{display:flex;gap:18px;justify-content:center;margin-top:18px}
 .square{display:flex;flex-direction:column;align-items:center;justify-content:center;width:140px;height:140px;background:#fff;border-radius:16px;text-decoration:none;color:var(--accent-dark);box-shadow:0 8px 20px rgba(255,77,137,0.08);transition:transform .12s ease}
@@ -42,7 +42,7 @@ body{background:linear-gradient(180deg,#05050a 0%, #0b0b10 40%, #050407 100%);co
 }
 .container{max-width:900px;margin:0 auto;padding:24px}
 .hero{padding:48px 0;text-align:center}
-.hero h1{font-size:44px;letter-spacing:1px;margin-bottom:8px;color:var(--accent)}
+.hero h1{font-size:44px;letter-spacing:1px;margin-bottom:8px;color:var(--accent);background:linear-gradient(45deg, #ff66a3, #ff4d89, #ff1493, #e91e63);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative;display:inline-block;animation: titleGlow 3s ease-in-out infinite;text-shadow:0 0 30px rgba(255,102,163,0.5)}
 .subtitle{color:var(--muted);margin-bottom:18px}
 .square-buttons{display:flex;gap:18px;justify-content:center;margin-top:18px}
 .square{display:flex;flex-direction:column;align-items:center;justify-content:center;width:140px;height:140px;background:#fff;border-radius:16px;text-decoration:none;color:var(--accent-dark);box-shadow:0 8px 20px rgba(255,77,137,0.08);transition:transform .12s ease}
@@ -164,6 +164,17 @@ body{background:linear-gradient(180deg,#05050a 0%, #0b0b10 40%, #050407 100%);co
 .cta.primary:hover {
   background: linear-gradient(135deg, #e91e63, #ff1493);
   box-shadow: 0 12px 25px rgba(233,30,99,0.4);
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    filter: brightness(1) drop-shadow(0 0 20px rgba(255,102,163,0.3));
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 30px rgba(255,102,163,0.6));
+    transform: scale(1.02);
+  }
 }
 
 @keyframes floaty {
